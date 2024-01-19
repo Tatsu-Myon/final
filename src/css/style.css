@@ -1,52 +1,221 @@
-body{
-background-color: beige;
-}
-
-header {
-  text-align: center;
-}
-
-header h1 {
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
+  padding: 0;
+  background-color: #f7edf4;
 }
 
-header button {
-  margin: 5px;
-  padding: 5px 10px;
+.box {
+  width: 500px;
+  height: 300px;
+  text-align: center;
+  margin: 7% auto;
+  background-color: #ffc2e1;
+  border-radius: 5%;
+}
+.box_update {
+  width: 500px;
+  height: 360px;
+  text-align: center;
+  margin: 7% auto;
+  background-color: #ffc2e1;
+  border-radius: 5%;
+}
+
+.box_delete {
+  background-color: #ffbbdd;
+  border-radius: 5%;
+  width: 500px;
+  margin: 7% auto;
+
+}
+.box_delete_box {
+position: relative;
+  top: 7px;
+
+}
+
+.magin {
+  position: relative;
+  top: 30px;
+}
+
+#sex {
+  margin-left: 5%;
+}
+
+.a:hover {
+  border: #ff1d99f0 2px solid;
   border-radius: 5px;
 }
 
-.ranking {
-  /* 必要に応じてスタイルを追加 */
+.file_boder:hover {
+  color: #ff53a6;
 }
 
-.categories {
+/* 以下は既存のスタイル */
+.no_toroku {
+  font-size: 30px;
+  font-family: 'Courier New', Courier, monospace;
+  color: rgb(255, 255, 255);
+  background: linear-gradient(to right, #ffc2e1, #f684a8);
+  border-radius: 30px;
+  width: 400px;
+  height: 350px;
+}
+
+.cat-image {
   position: relative;
-  top: 20px;
+  bottom: 340px;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  clip-path: circle(50% at 50% 50%);
 }
 
-.flex {
-  display: flex;
-  justify-content: space-around; /* 画像間のスペースを均等に配置 */
+.heart {
+  color: rgb(255, 196, 220);
+  font-size: 35px;
+  transition: font-size 0.5s ease-in-out, color 0.5s ease-in-out;
 }
 
-.category_img {
+.heart:hover {
+  font-size: 50px;
+  color: rgb(255, 118, 205);
+}
+
+header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav a {
+  color: rgb(249, 217, 217);
+  text-decoration: none;
+  border-bottom: 1px solid white;
+  padding-bottom: 0.5px;
+}
+
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #333;
+  color: white;
+}
+
+.btn {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  background-color: #555;
+}
+
+.toroku_h1 {
+  text-align: center;
   position: relative;
-  width: 100px; /* 画像のサイズを指定 */
-  height: 100px;
-  border-radius: 50%; /* 画像を円形に */
-  overflow: hidden;
-  background-color: rgb(255, 255, 246);
-  border: solid   rgb(255, 255, 255) 3px;
+  margin-top: 3%;
+  top: 30px;
+  color: #333;
+}
+
+.toroku_top{
+  /* text-align: center; */
+  text-decoration: none;
+  position: relative;
+  top: 8px;
+  color: black;
+}
+.toroku_top_box{
+  /* text-align: center; */
+  background-color: #ffcedd;
+  height: 40px; 
+  width: 100px;
+  border-radius: 10px;
+}
+
+.toroku_top:hover {
+  color: #ffffff;
+
+}
+.toroku_top_box:hover {
+  background-color: #ff6999;
 
 }
 
-.category_img img {
-  width: 115%; /* 画像が枠にピッタリ収まるように */
-  height: 115%;
-  object-fit: cover; /* アスペクト比を保ちながら画像を収める */
-  position: absolute;
-  top: 55%;
-  left: 60%;
-  transform: translate(-50%, -50%);
+.btn-toroku {
+  background-color: #ff9ab8;
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 8px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.btn-toroku:hover {
+  background-color: #ff6999;
+  color: #f7edf4;
+}
+
+
+.btn-toroku-delete {
+  background-color: #ff9ab8;
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 8px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.btn-toroku-delete:hover {
+  background-color: #ff6999;
+  color: #f7edf4;
 }
