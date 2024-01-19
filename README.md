@@ -5,4 +5,4 @@
 システム名　：I.ｗt.P
 URL　　　　 ：
 https://github.com/Tatsu-Myon/final
-    
+https://aso2201195.boo.jp/final/src/top.php
